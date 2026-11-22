@@ -22,3 +22,6 @@ def delivery_rate(delivered,total):
     return delivered / total * 100
 rate = delivery_rate(35, 42)
 print(f"Delivery rate: {rate:.1f}%")
+
+for days in [1,2,5,3,7]:
+    print(shipment_status(days))
