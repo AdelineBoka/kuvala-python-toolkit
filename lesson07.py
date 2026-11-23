@@ -31,3 +31,8 @@ for s in shipments:
 print(f"Shipments loaded: {len(shipments)}")
 print(f"Late shipments: {late_count}")
 print(f"Total value: {total_value} PLN")
+
+print("--- Late shipments ---")
+for s in shipments:
+    if shipment_status(s["days"]) == "LATE":
+        print(f"LATE: {s['id']} ({s['city']})")
